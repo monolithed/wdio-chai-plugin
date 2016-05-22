@@ -28,13 +28,13 @@ Following code shows the default `wdio` test runner configuration...
 ```js
 // wdio.conf.js 
 
-let plugins = require('wdio-chai-plugin');
+let chai = require('wdio-chai-plugin');
 
 module.exports = {
 	// ... 
 
-	before: function () {
-		plugins(browser);
+	before: function (browser) {
+		chai(browser);
 	},
 
 	// ... 
