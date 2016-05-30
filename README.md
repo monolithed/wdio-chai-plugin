@@ -30,10 +30,11 @@ Following code shows the default `wdio` test runner configuration...
 
 let chai = require('wdio-chai-plugin');
 
+/** @namespace browser */
 module.exports = {
 	// ... 
 
-	before: function (browser) {
+	before: function (capabilities, specs) {
 		chai(browser);
 	},
 
